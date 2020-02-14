@@ -1,3 +1,3 @@
-Pass: AWAN3X
-
-dont forget follow my instagram : awan3x
+pkg install python2
+cd telkomsel
+python2 gas.py
