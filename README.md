@@ -1,1 +1,1 @@
-pkg install python2
+follow my instagram : awan3x
