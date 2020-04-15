@@ -61,10 +61,10 @@ class inject(object):
             socket_server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             socket_server.bind((self.inject_host, self.inject_port))
             socket_server.listen(1)
-            frontend_domains = open(real_path('/config.txt.enc')).readlines()
+            frontend_domains = open(real_path('/config')).readlines()
             frontend_domains = filter_array(frontend_domains)
             if len(frontend_domains) == 0:
-                self.log('Frontend Domains not found. Please check config.txt.enc', color='G1')
+                self.log('Frontend Domains not found. Please check config', color='G1')
                 return
             self.log(' Awan3x\nLocal Host : 127.0.0.53\nLocal Port : 8000\nSUCCESS! \nOpen your psiphon.'.format(self.inject_host, self.inject_port))
             while True:
