@@ -126,14 +126,9 @@ class domain_fronting(threading.Thread):
         except TimeoutError:
             self.log('{} not responding'.format(self.proxy_host), color='[CC]')
 
-G = '\033[1;33m'
-R = '\033[31;1m'
 C = '\033[32;1m'
 
-print R + '|                              | \n'
-print G + '|          Awan3x              | \n'
-print C + '|                              | \n'
-        
+print C + ' \n'
     
 def main():
     C = '[G1]Password> !'
